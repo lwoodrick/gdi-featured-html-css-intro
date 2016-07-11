@@ -81,6 +81,10 @@
       </div>
     </section>
 
+    <section>
+      <h1>A little bit of context...</h1>
+    </section>
+
 
     <!-- What is HTML?-->
     <section>
@@ -101,7 +105,7 @@
       <ul>
         <li>Invented by Tim Berners-Lee</li>
         <li>Created "hypertext" to share scientific papers</li>
-        <li><a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">First web page</a> August 6, 1991</li>
+        <li><a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">First web page</a> (August 6, 1991)</li>
         <li>Standardized by w3 Consortium (squad of super nerds)</li>
       </ul>
     </section>
@@ -139,6 +143,9 @@
       <img src = "img/client-server.png" alt="Diagram showing computer connecting to server"/>
     </section>
 
+    <section data-background="img/class1-gif/slothflower.gif">
+    </section>
+
     <!-- Nitty gritty 2 - Tools -->
     <section>
       <h3>Tools</h3>
@@ -167,13 +174,12 @@
     </section>
     <section>
       <h3>Our Journey</h3>
-      <img src="img/sample-page.png" alt="Screenshot of a sample page"/>
       <p>We'll be hitting these topics over the course of our... course.</p>
       <ul>
         <li><strong class="blue">Class 1</strong>: Basic HTML</li>
         <li><strong class="blue">Class 2</strong>: Basic CSS</li>
         <li><strong class="blue">Class 3</strong>: Boxing Up Elements</li>
-        <li><strong class="blue">Class 3</strong>: Positioning Elements</li>
+        <li><strong class="blue">Class 4</strong>: Positioning Elements</li>
       </ul>
     </section>
 
@@ -188,15 +194,15 @@
 
     <section>
       <h3>Anatomy of a website</h3>
-      <p>Concrete example:</p>
+      <p class="left-align"><strong>Concrete example:</strong></p>
       <ul>
         <li>A paragraph is your <strong class="blue">content</strong></li>
         <li>Wrapping your content in HTML tags to make it look like a paragraph is <strong class="blue">structure</strong>
 <pre><code class ="html">&lt;p&gt;A paragraph is your content&lt;/p&gt;
 </code></pre>
         </li>
-        <li>Making the font of your paragraph green and 24px is <strong class="blue">presentation</strong><br />
-        <p style="font-size:24px; color:green;">A paragraph is your content</p>
+        <li>Making the font of your paragraph green and 24px is <strong class="blue">presentation</strong>
+        <p style="font-size:24px; color:green; display: inline-block; background-color: white; padding: 5px 10px; margin-left: 10px;">A paragraph is your content</p>
         </li>
       </ul>
     </section>
@@ -242,10 +248,10 @@
             <li>Marks the beginning &amp; end of an element</li>
             <li>Opening tag and Closing Tag</li>
             <li>Tags contain characters that indicate the tag's purpose
-<pre><code class ="html">&lt;tagname&gt;Stuff in the middle&lt;/tagname&gt;</code></pre>
+<pre><code class="html">&lt;tagname&gt;Stuff in the middle&lt;/tagname&gt;</code></pre>
             </li>
             <li>
-<pre><code class ="html">&lt;p&gt; This is a sample paragraph.&lt;/p&gt;</code></pre>
+<pre><code class="html">&lt;p&gt; This is a sample paragraph.&lt;/p&gt;</code></pre>
             </li>
           </ul>
         </li>
@@ -312,6 +318,7 @@ www.w3.org/TR/html4/loose.dtd"&gt;
       <h3>Let's develop it!</h3>
       <p>Let's get our web page set up with a doctype, head, title and body.</p>
       <p>Later we'll add some content.</p>
+      <p class="fragment"><a href="https://jsbin.com/caxaxez/edit?html,output" target="blank">(Sample Code)</a></p>
     </section>
 
     <!-- HTML Boilerplate Cheat -->
@@ -389,16 +396,7 @@ www.w3.org/TR/html4/loose.dtd"&gt;
       <h3>Nesting Order</h3>
       <img src = "img/owls.jpg" alt="Nesting owl dolls"/>
       <p>Whichever element OPENS first CLOSES last</p>
-    </section>
-
-    <section>
-      <h3>Bad Nesting</h3>
-      <img src = "img/class1-gif/badnesting.gif" alt="Otter stacking cups unsuccessfully"/>
-    </section>
-
-    <section>
-      <h3>Good Nesting</h3>
-      <img src = "img/class1-gif/goodnesting.gif" alt="Otter stacking cups successfully"/>
+      <p>Not paying attention to your nesting can have very interesting consequences when the browser renders your code.</p>
     </section>
 
     <section>
@@ -417,7 +415,25 @@ www.w3.org/TR/html4/loose.dtd"&gt;
 </code></pre>
     </section>
 
+    <section>
+      <h3>Bad Nesting</h3>
+      <p><a href="https://web.archive.org/web/20061018213510/http://www.sewingincanada.com/embtrb.htm">Here's an example of a site where nesting went wrong.</a></p>
+      <p>Font sizes with relative inputs combined with bad nesting makes this website get really silly really quickly.</p>
+
+    </section>
+
+    <section data-background="img/class1-gif/badnesting.gif">
+    </section>
+
+    <section data-background="img/class1-gif/goodnesting.gif">
+    </section>
+
     <!-- Elements -->
+
+    <section>
+      <h1>Our HTML Building Blocks</h1>
+    </section>
+
     <!-- Paragraphs-->
     <section>
       <h3>Element: Paragraph</h3>
@@ -511,6 +527,7 @@ Here is a paragraph with &lt;em&gt;emphasized&lt;/em&gt; text and &lt;strong&gt;
           (That's a lot of text to write on the fly, may I suggest Cupcake Ipsum (<a href="http://www.cupcakeipsum.com/" target="_blank">http://www.cupcakeipsum.com</a>)?)
         </p>
       </div>
+      <div><a href="https://jsbin.com/hemoku/edit?html,output" target="_blank">(Sample Code)</a></div>
     </section>
 
     <!-- Links-->
@@ -566,6 +583,7 @@ Here is a paragraph with &lt;em&gt;emphasized&lt;/em&gt; text and &lt;strong&gt;
       <h3>Let's Develop It</h3>
       <p>Let's add links to our site!</p>
       <p>Add links that open in the same window, a new window and link to an e-mail address.</p>
+      <p class="fragment"><a href="https://jsbin.com/jugiyap/edit?html,output" target="blank">(Sample Code)</a></p>
     </section>
 
     <!-- Self-closing elements-->
@@ -618,6 +636,7 @@ And if I stay it will be double
       <p class="fragment" style="margin-top: 40px;">
         You can use <a href="http://placecorgi.com/">Place Corgi</a> for images on the fly. (e.g. try using "http://placecorgi.com/500/250" as the source for one of your image tags.)
       </p>
+      <p class="fragment"><a href="https://jsbin.com/yehefa/edit?html,output" target="blank">(Sample Code)</a></p>
     </section>
 
     <!-- Lists-->
@@ -665,6 +684,7 @@ And if I stay it will be double
       <h3>Let's Develop it!</h3>
       <p>Let's add one of each ordered and unordered lists to our page.</p>
       <p>We can make a list of links or even a list of images!</p>
+      <p class="fragment"><a href="https://jsbin.com/bizuqe/edit?html,output" target="blank">(Sample Code)</a></p>
     </section>
 
     <!--Comments-->

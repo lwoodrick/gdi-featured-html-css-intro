@@ -116,3 +116,7 @@ div.left-align{
   padding: 5px 15px;
 	background-color: white;
 }
+
+.reveal pre code {
+	padding: 10px 20px;
+}
