@@ -75,29 +75,27 @@
           <section>
             <h3>Quiz Part 3</h3>
             <p>What is it called when you have a 'tag' + 'content' + 'closing tag'?</p>
-            <div class="fragment blue">Answer: An HTML <strong>Element</strong></div>
+            <div class="fragment blue">Answer: An HTML <strong class="blue">Element</strong></div>
           </section>
 
           <!-- Review: Role of HTML v. CSS-->
           <section>
-            <h3>Let's Review</h3>
-            <img src="img/elephants.jpg" alt="Two elephants interacting"/>
-            <p><small>Photo credit:  <a href="http://www.flickr.com/photos/ginable/325235488/">Ginable</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a></small></p>
+            <h1>Let's Review</h1>
           </section>
 
           <section>
             <h3>Anatomy of a website</h3>
-            <p><strong>Your Content</strong><br />
-            <strong>+ HTML</strong>: Structure<br />
-            <strong>+ CSS</strong>: Presentation<br />
-            <strong>= Your Website</strong></p>
+            <p><strong class="blue">Your Content</strong><br />
+            <strong class="blue">+ HTML</strong>: Structure<br />
+            <strong class="blue">+ CSS</strong>: Presentation<br />
+            <strong class="blue">= Your Website</strong></p>
             <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
           </section>
 
           <!-- What is CSS-->
           <section>
             <h3>CSS: What is it?</h3>
-            <p>CSS = <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</p>
+            <p>CSS = <strong class="blue">C</strong>ascading <strong class="blue">S</strong>tyle <strong class="blue">S</strong>heets</p>
             <p>CSS is a "style sheet language" that lets you style the elements on your page.</p>
             <p>CSS is works in conjunction with HTML, but is not HTML itself.</p>
           </section>
@@ -230,12 +228,12 @@
             <h3>CSS Color Values</h3>
             <p>Your browser can accept colors in many different ways:</p>
             <ul>
-              <li><strong>Color name</strong> (ex. red)</li>
-              <li><strong>Hexadecimal value</strong> (ex. #FF0000)</li>
-              <li><strong>RGB value</strong> (ex. rgb(255, 0, 0))</li>
-              <li><strong>HSL value</strong> (ex. hsl(0, 100%, 100%))</li>
+              <li><strong class="blue">Color name</strong> (ex. red)</li>
+              <li><strong class="blue">Hexadecimal value</strong> (ex. #FF0000)</li>
+              <li><strong class="blue">RGB value</strong> (ex. rgb(255, 0, 0))</li>
+              <li><strong class="blue">HSL value</strong> (ex. hsl(0, 100%, 100%))</li>
             </ul>
-            <p>
+            <p style="margin-top: 50px;">
               The 17 standard colors are:
               <span style="color:aqua; background:black;">aqua</span>,
               <span style="color:black,">black</span>,
@@ -255,6 +253,13 @@
               <span style="color:white; background:black;">white</span>,
               and <span style="color:yellow; background:black;">yellow</span>.
             </p>
+          </section>
+          <section>
+            <h3>Resources for Color Selection</h3>
+            <ul>
+              <li><a href="https://color.adobe.com" title="Adobe Color" target="_blank">Adobe Color</a> allows you to play around with color palettes and lift hex codes from them.</li>
+              <li><a href="http://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html" title="Current Color Palette Trends" target="_blank">Current Color Palette Trends</a> from <a href="http://www.awwwards.com/" title="Awwwards">Awwwards</a>, which is a cool site to look at for inspiration and just to dream about your coding future.</li>
+            </ul>
           </section>
           <section>
             <h3>Property: Color</h3>
@@ -283,16 +288,16 @@
           <section>
             <h3>Let's develop it</h3>
             <ul>
-              <li>Add some rules to your css file</li>
-              <li>Change the font color and background color of different types of elements</li>
-              <li>Try selecting links, paragraphs, and lists</li>
+              <li>Add some rules to your css file.</li>
+              <li>Change the font color and background color of different types of elements.</li>
+              <li>Try selecting links, paragraphs, and lists.</li>
             </ul>
           </section>
 
           <!-- Multiple values -->
           <section>
           <h3>Property Values</h3>
-          <p>Each property can have one or more comma separated values.</p>
+          <p>Some properties like <code>background</code> and <code>font-family</code> can have one or more comma separated values.</p>
 <pre><code class = "css">p{
   color: white;
   background-color: red;
@@ -346,6 +351,9 @@
   font: italic bold 10px sans-serif;
 }
 </code></pre>
+<p>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font" target="_blank">Documentation for Font Property Ordering</a>
+</p>
           </section>
 
           <!-- Exercise-->
@@ -401,16 +409,14 @@
           <!-- IDs and Classes-->
           <section>
             <h3>Reusing code</h3>
-            <p>As a general coding principle, <strong>D</strong>on't <strong>R</strong>epeat <strong>Y</strong>ourself.
+            <p>As a general coding principle, <strong class="blue">D</strong>on't <strong class="blue">R</strong>epeat <strong class="blue">Y</strong>ourself.
             <p>To reuse CSS, we use IDs and classes.</p>
-            <img src="img/recycle.jpg" alt="Recycle symbol"/>
-            <p><small>Photo credit:  <a href="http://www.flickr.com/photos/yomostro/2502577270/">Yo Mostro</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a></small></p>
           </section>
           <section>
             <h3>IDs vs. Classes</h3>
-            <p><strong>ID</strong> -- Should only apply to one element on a webpage, i.e., a webpage only has one footer.<br />
+            <p><strong class="blue">ID</strong>: Should only apply to one element on a webpage, i.e., a webpage only has one footer.<br />
             The "#" is how you tell CSS "this is an id."</p>
-            <p><strong>Class</strong> -- Lots of elements can have the same class, i.e., There can be many warnings on one webpage.<br />
+            <p><strong class="blue">Class</strong>: Lots of elements can have the same class, i.e., There can be many warnings on one webpage.<br />
             The "." is how you tell CSS "this is a class name."</p>
           </section>
           <section>
@@ -473,11 +479,11 @@
             <h3>Cascading priority</h3>
             <p>Your browser assigns different priorities to CSS depending on the type of selector.</p>
             <ol>
-              <li>Important! - <strong>Most Important</strong></li>
+              <li>Important! - <strong class="blue">Most Important</strong></li>
               <li>In line CSS</li>
               <li>ID</li>
               <li>Class</li>
-              <li>Element - <strong>Least Important</strong></li>
+              <li>Element - <strong class="blue">Least Important</strong></li>
             </ol>
           </section>
           <section>
@@ -521,18 +527,22 @@ a{ //This rule wins
               <li>width</li>
               <li>height</li>
             </ul>
-            <p><a href = "https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference">Comprehensive list of all CSS properties</a></p>
+            <p style="margin-top: 50px;"><a href = "https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference">Comprehensive list of all CSS properties</a></p>
           </section>
 
           <section>
             <h2>Questions?</h2>
+          </section>
+
+          <section>
+            <h3><a href="homework/class2.html" target="_blank">Homework for Next Class</a></h3>
           </section>
 </div><!-- Close slides -->
 
     <div>
       <footer>
         <div class="copyright">
-          HTML/CSS ~ Girl Develop It
+          HTML/CSS ~ Lauren Woodrick ~ GDI Cincy
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div>
       </footer>
