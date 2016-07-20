@@ -61,6 +61,77 @@
             <h2>Class 4</h2>
           </section>
 
+          <!-- Box Sizing -->
+
+          <section data-background="img/class3-gif/betterway.gif">
+          </section>
+
+          <section>
+          <h3>Box-Sizing</h3>
+          <p><strong class="blue">Box-sizing</strong> is the means by which we tell the browser
+          how to calculate the width height of an object.</p>
+          <p class="fragment">The default in CSS is to consider the height and width of an
+          object as only including the object's content area</p>
+          </section>
+
+          <section>
+            <h3>Box-Sizing: Content-Box</h3>
+            <img style="box-shadow: none; height: 300px;" src="img/content-box.png" alt="Diagram of content-box width and height calculation.">
+            <pre><code class="css">html {
+    box-sizing: content-box;
+    /* The default, width/height
+    include only the content box */
+  }</code></pre>
+          </section>
+
+          <section>
+            <h3>Box-Sizing: Border-Box</h3>
+            <img style="box-shadow: none; height: 300px;" src="img/border-box.png" alt="Diagram of content-box width and height calculation.">
+            <pre><code class="css">html {
+    box-sizing: content-box;
+    /* The alternative, width/height
+    include the content box, padding,
+    and border in the total */
+  }</code></pre>
+          </section>
+
+          <section>
+            <h3>Box-Sizing</h3>
+            <p>While <code>content-box</code> is the default, <code>border-box</code>
+            can sometimes be easier to conceptualize and set values with responsivity in mind,
+            and you might want to use it instead when styling your sites.</p>
+          </section>
+
+          <section>
+            <h3>Box-Sizing</h3>
+            <p>For example, when trying to craft a four column layout with 10px of padding</p>
+            <pre><code class="css">.column {
+    box-sizing: content-box;
+    width: 23%;
+    padding: 1%; /* Err... close enough when screen size is > 1000 */
+    /* Total column width = 25% */
+  }</code></pre>
+          <pre><code class="css">.column {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 10px;
+    /* Total column width = 25% */
+  }</code></pre>
+          </section>
+
+          <section>
+            <h3>Box-Sizing</h3>
+            <p>If you want to use <code>box-sizing: border-box;</code> this is the best
+            way to insert it into your CSS.</p>
+            <pre><code class="css">html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }</code></pre>
+  <p style="color: #aaa; margin-top: 20px;">(Thanks, <a href="https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/" title="Link to box-sizing: border-box best practice tip.">CSS-Tricks</a>, you're a peach.)</p>
+          </section>
+
           <section>
             <h3>Static Positioning</h3>
             <ul>
