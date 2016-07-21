@@ -294,6 +294,7 @@
             <h3>Let's Develop it!</h3>
             <p>Let's add some positioning.</p>
             <p>Let's create a div that contains an image and a caption, and position the caption absolutely overtop the image.</p>
+            <p class="fragment" style="margin-top: 20px;"><a href="http://jsbin.com/jaciyiferu/4/edit?html,css,output">(Sample Code)</a></p>
           </section>
 
           <!-- Float-->
@@ -390,18 +391,19 @@ clear: both;
           <section>
             <h3>Let's Develop It</h3>
             <p>Let's float our side bar and content areas.</p>
+            <p class="fragment" style="margin-top: 20px;"><a href="http://jsbin.com/gubeyegasi/edit?html,css,output">(Sample Code)</a></p>
           </section>
 
           <section>
             <h3>Fixed Positioning</h3>
             <p>Fixed positioning is sort of like absolute positioning... but it positions
             your element relative to the browser window.</p>
-            <pre><code>.cincinnati_skyline {
-  position: fixed:
-  bottom: 0;        
-}
-            </code>
-            </pre>
+            <pre><code>img.cincinnati_skyline {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  /* This will 'fix' the image to the bottom of the browser window and allow elements to scroll beneath it. */
+}</code></pre>
           </section>
 
           <section>
